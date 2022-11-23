@@ -1,0 +1,45 @@
+package com.example.higherorlowergame;
+
+import androidx.appcompat.app.AppCompatActivity;
+import java.util.*;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    int rand_int;
+
+    public void guess(View view)
+    {
+        EditText input=(EditText)findViewById(R.id.inputNumber);
+        String s=input.getText().toString();
+        int gss=Integer.parseInt(s);
+      //  Random rand = new Random();
+
+        if(gss<rand_int){
+            Toast.makeText(this, "Go higher", Toast.LENGTH_SHORT).show();
+        }
+        if(gss>rand_int){
+            Toast.makeText(this, "Go lower", Toast.LENGTH_SHORT).show();
+        }
+
+        if(gss==rand_int){
+            Toast.makeText(this, "Correct, you guessed it!!!", Toast.LENGTH_SHORT).show();
+        }
+
+
+    }
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        Random rand = new Random();
+        rand_int = rand.nextInt(26);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+    }
+}
