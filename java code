@@ -1,45 +1,68 @@
-package com.example.higherorlowergame;
+package com.example.cargame;
 
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.*;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.os.Bundle;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int rand_int;
 
-    public void guess(View view)
+    public void upfast(View view)
     {
-        EditText input=(EditText)findViewById(R.id.inputNumber);
-        String s=input.getText().toString();
-        int gss=Integer.parseInt(s);
-      //  Random rand = new Random();
+        System.out.println("up");
+        ImageView car=(ImageView) findViewById(R.id.car);
+        car.animate().translationYBy(-10000).setDuration(1000);
+    }
 
-        if(gss<rand_int){
-            Toast.makeText(this, "Go higher", Toast.LENGTH_SHORT).show();
-        }
-        if(gss>rand_int){
-            Toast.makeText(this, "Go lower", Toast.LENGTH_SHORT).show();
-        }
+    public void up(View view)
+    {
+        System.out.println("up");
+        ImageView car=(ImageView) findViewById(R.id.car);
+        car.animate().translationYBy(-100).setDuration(100);
+    }
 
-        if(gss==rand_int){
-            Toast.makeText(this, "Correct, you guessed it!!!", Toast.LENGTH_SHORT).show();
-        }
+    public void left(View view)
+    {
+        System.out.println("left");
+        ImageView car=(ImageView) findViewById(R.id.car);
+        car.animate().translationXBy(-100).setDuration(500);
+    }
+
+    public void right(View view)
+    {
+        System.out.println("right");
+        ImageView car=(ImageView) findViewById(R.id.car);
+        car.animate().translationXBy(100).setDuration(500);
+    }
+
+    public void down(View view)
+    {
+        System.out.println("down");
+        ImageView car=(ImageView) findViewById(R.id.car);
+        car.animate().translationYBy(100).setDuration(100);
+    }
+
+    public void reset(View view)
+    {
+        System.out.println("reset");
+        ImageView car=(ImageView) findViewById(R.id.car);
+        car.animate().translationY(0).translationX(0).setDuration(10);
 
 
+    }
+
+    public void round(View view)
+    {
+        System.out.println("left");
+        ImageView car=(ImageView) findViewById(R.id.car);
+        car.animate().rotationBy(360).setDuration(500);
     }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Random rand = new Random();
-        rand_int = rand.nextInt(26);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 }

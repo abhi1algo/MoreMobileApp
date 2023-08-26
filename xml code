@@ -6,57 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I've thought of a number between 1 to 25"
-        android:textSize="16sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/leftButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:onClick="left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/left" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Can you guess it?"
-        android:textSize="16sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/rightButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:onClick="right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/right" />
 
-    <EditText
-        android:id="@+id/inputNumber"
-        android:layout_width="148dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textAlignment="center"
+    <ImageView
+        android:id="@+id/upButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:onClick="up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
+        app:layout_constraintVertical_bias="0.90999997"
+        app:srcCompat="@drawable/up" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="111dp"
-        android:layout_height="55dp"
-        android:onClick="guess"
-        android:text="GUESS"
-        android:textSize="16sp"
+    <ImageView
+        android:id="@+id/downButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:onClick="down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/down" />
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/caryellow" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/refresh" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/reset" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="upfast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/upfast" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
