@@ -6,109 +6,114 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/leftButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:clickable="false"
-        android:onClick="left"
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:onClick="rupee"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/left" />
+        app:layout_constraintVertical_bias="0.417"
+        app:srcCompat="@drawable/rupee" />
 
-    <ImageView
-        android:id="@+id/rightButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:clickable="false"
-        android:onClick="right"
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:onClick="dirham"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/right" />
+        app:layout_constraintVertical_bias="0.417"
+        app:srcCompat="@drawable/dirham" />
 
-    <ImageView
-        android:id="@+id/upButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:clickable="false"
-        android:onClick="up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.90999997"
-        app:srcCompat="@drawable/up" />
-
-    <ImageView
-        android:id="@+id/downButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:clickable="false"
-        android:onClick="down"
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:onClick="euro"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/down" />
+        app:layout_constraintVertical_bias="0.417"
+        app:srcCompat="@drawable/euro" />
 
-    <ImageView
-        android:id="@+id/car"
-        android:layout_width="80dp"
-        android:layout_height="100dp"
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:onClick="ruble"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/caryellow" />
+        app:layout_constraintVertical_bias="0.629"
+        app:srcCompat="@drawable/ruble" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:onClick="round"
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:onClick="yen"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.719"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95"
-        app:srcCompat="@drawable/refresh" />
+        app:layout_constraintVertical_bias="0.629"
+        app:srcCompat="@drawable/yen" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:onClick="reset"
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="161dp"
+        android:layout_height="33dp"
+        android:text="US DOLLAR(S)"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95"
-        app:srcCompat="@drawable/reset" />
+        app:layout_constraintVertical_bias="0.13" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:onClick="upfast"
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="133dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002"
-        app:srcCompat="@drawable/upfast" />
-
-
-
+        app:layout_constraintVertical_bias="0.235" />
 </androidx.constraintlayout.widget.ConstraintLayout>

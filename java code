@@ -1,63 +1,63 @@
-package com.example.cargame;
+package com.example.currencyconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.text.Editable;
 import android.view.View;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.widget.EditText;
+import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
 
-
-    public void upfast(View view)
+    public void rupee(View view)
     {
-        System.out.println("up");
-        ImageView car=(ImageView) findViewById(R.id.car);
-        car.animate().translationYBy(-10000).setDuration(1000);
-    }
-
-    public void up(View view)
-    {
-        System.out.println("up");
-        ImageView car=(ImageView) findViewById(R.id.car);
-        car.animate().translationYBy(-100).setDuration(100);
-    }
-
-    public void left(View view)
-    {
-        System.out.println("left");
-        ImageView car=(ImageView) findViewById(R.id.car);
-        car.animate().translationXBy(-100).setDuration(500);
-    }
-
-    public void right(View view)
-    {
-        System.out.println("right");
-        ImageView car=(ImageView) findViewById(R.id.car);
-        car.animate().translationXBy(100).setDuration(500);
-    }
-
-    public void down(View view)
-    {
-        System.out.println("down");
-        ImageView car=(ImageView) findViewById(R.id.car);
-        car.animate().translationYBy(100).setDuration(100);
-    }
-
-    public void reset(View view)
-    {
-        System.out.println("reset");
-        ImageView car=(ImageView) findViewById(R.id.car);
-        car.animate().translationY(0).translationX(0).setDuration(10);
+        EditText input=(EditText) findViewById(R.id.input);
+        String s=input.getText().toString();
+        double finalValue=Integer.parseInt(s);
+        Toast.makeText(this, (finalValue*82)+" Rupees ", Toast.LENGTH_SHORT).show();
 
 
     }
 
-    public void round(View view)
+    public void euro(View view)
     {
-        System.out.println("left");
-        ImageView car=(ImageView) findViewById(R.id.car);
-        car.animate().rotationBy(360).setDuration(500);
+        EditText input=(EditText) findViewById(R.id.input);
+        String s=input.getText().toString();
+        double finalValue=Integer.parseInt(s);
+        Toast.makeText(this, (finalValue*.96)+" Euros ", Toast.LENGTH_SHORT).show();
+
     }
+
+    public void dirham(View view)
+    {
+        EditText input=(EditText) findViewById(R.id.input);
+        String s=input.getText().toString();
+        double finalValue=Integer.parseInt(s);
+        Toast.makeText(this, (finalValue*3.67)+" UAE Dirham ", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void yen(View view)
+    {
+        EditText input=(EditText) findViewById(R.id.input);
+        String s=input.getText().toString();
+        double finalValue=Integer.parseInt(s);
+        Toast.makeText(this, (finalValue*139.29)+" JapaneseYen ", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void ruble(View view)
+    {
+        EditText input=(EditText) findViewById(R.id.input);
+        String s=input.getText().toString();
+        double finalValue=Integer.parseInt(s);
+        Toast.makeText(this, (finalValue*60.79)+" Russian Ruble ", Toast.LENGTH_SHORT).show();
+
+    }
+
+
 
 
     @Override
